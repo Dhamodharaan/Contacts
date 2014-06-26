@@ -14,3 +14,32 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+ function validate()
+{
+	
+alert("hi");
+var fname=document.getElementById("contact_firstname").value
+
+var lname=document.getElementById("contact_lastname").value
+
+var emailid=document.getElementById("contact_emailid").value
+
+var mno=document.getElementById("contact_mno").value
+
+
+var avatar=document.getElementById("contact_photo").value
+
+var age=document.getElementById("contact_avatar_female").checked
+
+var fage=document.getElementById("contact_avatar_male").checked
+
+
+
+if (fname == "" || lname == "" || emailid == "" || mno == "" || avatar == false)
+{
+alert("Input Feilds cannot be empty !");
+return false;
+}
+return true;
+}

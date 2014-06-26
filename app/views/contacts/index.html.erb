@@ -1,35 +1,30 @@
-<h1>CONTACTS</h1>
- 
-<table>
-  <tr>
-    <th>FirstName &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp</th>
-    <th>LastName&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp</th>
-   <th>MobileNumber&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp</th>
-    <th>Email_id&nbsp &nbsp&nbsp &nbsp</th>
-   <th>Address&nbsp&nbsp</th>
-   <th>Photo</th>
-   
+
+<% @contact.each do |contact| %>
+ <table class="tg">
+    <th class="tg-031e" rowspan="5">
+        <img src ="/data/<%= contact.photo %>" width="80" height="90"/ style="padding-right: 25px;">
+    </th>
+    
+    <th class="tg-iu59"colspan="0" ><%= contact.firstname %> <%= contact.lastname %></th>
   </tr>
+  <tr>
+    <td class="tg-031e">Gender</td>
+    <td class="tg-031e"><%= contact.avatar %></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Email</td>
+    <td class="tg-031e"><%= contact.emailid %></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Phone</td>
+    <td class="tg-031e"><%= contact.mno %></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Address</td>
+    <td class="tg-031e"><%= contact.add %></td>
+  </tr> 
+
  
-  <% @contact.each do |contact| %>
-    <tr>
-      <td><%= contact.firstname %></td>
-      <td><%= contact.lastname %></td>
-	<td><%= contact.mno %></td>
-      <td><%= contact.emailid %></td>
-       <td><%= contact.add %></td>
-       <td><%= contact.photo %>&nbsp&nbsp</td>
-       
-	<td><%= link_to 'Show', contact_path(contact) %>&nbsp&nbsp&nbsp &nbsp</td>
-    <td><%= link_to 'Edit', edit_contact_path(contact) %>&nbsp &nbsp</td>
-    <td><%= link_to 'Destroy', contact_path(contact),
-                    method: :delete %></td>
-
-     
-
-    </tr>
-  <% end %>
-<a href=http://localhost:3000/contacts/new>Create New</a>
-</table>
-
-
+ 
+</table> <hr width="1000"%>
+<% end %>

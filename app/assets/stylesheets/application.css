@@ -1,15 +1,80 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+    
+   
+    margin:0 auto;
+     color:#176460;
+
+
+}
+
+p {
+    padding: 10px;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#header {
+    float: left;
+    height: 60px;
+    width: 100%;    
+    background: #176460;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:#ffffcc
+
+
+}
+
+#content {
+    float: left;
+    background: #D1E0FF;
+    width: 100%;
+}
+
+#footer {
+    height: 40px;
+    width: 100%;
+    background: #176460;
+    clear: both;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:#ffffcc
+}
+
+#p{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 100px;
+    padding-left: 150px;
+}
+
+p.padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 100px;
+    margin-left: 1cm; 
+}
+a
+{   float: right;
+    padding-right: 50px;
+   text-decoration:none;
+    color:#ffffff
+
+
+
+}
+
+.tg 
+ {border-collapse:collapse;border-spacing:5px;margin-left:4cm;}
+.tg 
+td{font-family:Arial, sans-serif;font-size:12px;padding:1px 1px;border-style:none;overflow:hidden;word-break:normal;font-weight:bold;color:#176460;padding-right: 25px;}
+
+.tg 
+th{font-family:Arial, sans-serif;font-size:12px;font-weight:normal;padding:1px 1px;overflow:hidden;word-break:normal;font-weight:bold;text-decoration:underline;color:#176460
+    }
+
+.tg .tg-iu59{font-family:serif;}

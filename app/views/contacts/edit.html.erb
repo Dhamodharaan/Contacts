@@ -12,6 +12,8 @@
     </ul>
   </div>
   <% end %>
+
+  Listing COntacts
   <p>
     <%= f.label :First_Name %><br>
     <%= f.text_field :firstname %>
@@ -34,6 +36,12 @@
     <%= f.label :Address %><br>
     <%= f.text_field :add %>
   </p>
+  <p>
+  <%= f.radio_button(:avatar, "Male") %>
+<%= f.label :avatar, "MALE" %>
+<%= f.radio_button(:avatar, "Female") %>
+<%= f.label :avatar, "FEMALE" %>
+</p>
  <p>
 <%= f.label :Photo  %><br>
 <%= f.file_field :photo %>
@@ -43,4 +51,4 @@
   </p>
 <% end %>
  
-<%= link_to 'Back', articles_path %>
+<%= link_to 'Back', contacts_path %>

@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-
+get  "contacts/male"
+get "contacts/female"
+get "new_magician" => "contacts#new"
 	resources :contacts
 
-get "new_magician" => "contacts#new"
 root "contacts#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

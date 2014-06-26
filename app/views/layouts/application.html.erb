@@ -6,9 +6,22 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<%= yield %>
+<body>
+ 
+<div id="header"><p class="padding" >
+<img src="/assets/pbook1.jpeg" height="20" width="20" />Contact Book  
+<a href = "/contacts">Home</a>
+<a href = "/contacts/male">Male</a>
+<a href = "/contacts/female">Female</a></p>
+
+
+</div> 
+ <div id="content">
+    <%= yield %>
+  </div>
+<div id="footer"><center>All Text and Design &copy 2014 Report Bee Edusys Pvt Ltd</center></div>
+  
 
 </body>
 </html>
